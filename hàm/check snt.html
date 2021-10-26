@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check snt</title>
+</head>
+<body>
+<!--kiểm tra 1 số xem có phải là snt hay không-->
+nhập số: <input type="number" id="snt">
+<input type="button" value="check" onclick="check()">
+<script>
+    function check() {
+        let number = document.getElementById("snt").value;
+        let display = 'đây là số nguyên tố!'
+        for (let i = 2; i < number; i++){
+            if (number % i == 0){
+                display = 'đây không phải số nguyên tố'
+            }
+        }alert(display)
+    }
+    check()
+</script>
+</body>
+</html>

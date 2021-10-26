@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+nhập: <input type="text" id="dich"/>
+<input type="button" value="dịch" onclick="check()">
+<p id="result"></p>
+<script>
+    function check() {
+        let inter = document.getElementById("dich").value;
+        let eng = ["i", "you", "car", "bike", " dog", "cat"]
+        let vie = ["tôi", "bạn", "ô tô", "xe máy", "chó", "mèo"]
+        let flag = true;
+        for (let i = 0; i < vie.length; i++) {
+            if (vie[i] === inter) {
+                flag = false
+                document.getElementById("result").innerHTML=eng[i];
+                break
+            }
+            if (eng[i] === inter) {
+                flag = false
+                document.getElementById("result").innerHTML = vie[i];
+                break
+            }
+            if (flag === true){
+                document.getElementById("result").innerHTML ="không có trong đây";
+            }
+        }
+    }
+</script>
+</body>
+</html>

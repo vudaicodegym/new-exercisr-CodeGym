@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<!--Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, -->
+<!--số tháng cho vay và lãi xuất hàng tháng.-->
+<script>
+    let tiengui = parseInt(prompt('nhập số tiền gửi'));
+    let time = parseInt(prompt('nhập thời gian gửi (tháng)'));
+    let laiSuat = parseInt(prompt('nhập lãi suất (%/năm)'));
+    let  tienLai;
+    let total;
+    for (let i = 0; i < time; i++){
+        tienLai = tiengui * (laiSuat / 12 / 100);
+        tiengui += tienLai
+    }
+    document.write('tổng gốc và lãi sau ' + time + ' tháng là: ' + tiengui)
+</script>
+</body>
+</html>

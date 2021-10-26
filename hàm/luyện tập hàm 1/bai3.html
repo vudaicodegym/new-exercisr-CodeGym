@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<!--tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,-->
+<!--hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,-->
+<!--trả về tổng của hai tham số.-->
+<script>
+    let a = +prompt("nhập vào số a");
+    let b =  +prompt("nhập vào số b");
+    function check(a,b) {
+        if (a > b) {
+            alert("số a lớn hơn số b")
+        }else{
+            return(a+b)
+        }
+    }
+    let result = a + b
+check(a,b)
+    console.log(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s tam giac vuong</title>
+</head>
+<body>
+<h1>tính diện tích tam giác có 2 cạnh kề = a.b</h1>
+<form action="">
+    nhập cạnh a <input type="text" id="a">
+    nhập cạnh b <input type="text" id="b">
+    <input type="button" value="tính diện tích" onclick="checks()">
+    <script>
+        function checks(){
+            let a = document.getElementById("a").value
+            let b = document.getElementById("b").value
+            let s = a * b / 2
+            alert("diện tích hình tam giác là:" + s)
+        }
+    </script>
+</form>
+</body>
+</html>

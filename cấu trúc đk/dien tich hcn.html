@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hcn</title>
+</head>
+<body>
+<h1>tính diện tích hình chữ nhật cạnh a,b</h1>
+<form action="">
+    nhập cạnh a<input type="text" id="canha">
+    nhập canh b<input type="text" id="canhb">
+    <input type="button" value="tính diện tích" onclick="check()">
+</form>
+<script>
+    function check() {
+        let a = document.getElementById('canha').value
+        let b = document.getElementById('canhb').value
+        let s = a * b
+        alert("diện tích hình chữ nhật cạnh a,b là: " + s )
+    }
+</script>
+</body>
+</html>

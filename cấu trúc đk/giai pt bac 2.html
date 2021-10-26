@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải pt bậc 2</title>
+</head>
+<body>
+<!--pt bậc 2 ax^2 bx + c = 0-->
+<script>
+    let a = parseInt(prompt('nhập số a'));
+    let b = parseInt(prompt('nhập số b'));
+    let c = parseInt(prompt('nhập số c'));
+    let delta = b * b - 4 * a * c
+    let x = -b - Math.sqrt(delta) / 2 * a;
+    let y = -b + Math.sqrt(delta) / 2 * a;
+    let z = -b / 2 * a;
+    if (delta > 0) {
+        document.write('x1 = ' + x + '<br> x2 = ' + y)
+    } else if (delta === 0) {
+        alert("x1 = x2 = " + z)
+    } else alert('phương trình vô cmn nghiệm')
+</script>
+</body>
+</html>
